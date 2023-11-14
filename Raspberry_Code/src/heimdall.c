@@ -114,13 +114,13 @@ static void * fn_pwm_waiter (void * psw_PWM) {
 
 		//pthread_cond_signal (& sw_PWM->cond_wait);
         GPIO_write(sw_PWM->Pin, 0);
-		if (sw_PWM->down_nano_delay != 0) Delay_nano(sw_PWM->down_nano_delay);
+		if (sw_PWM->down_nano_delay != 0) Delay_Micro_accurate(sw_PWM->down_nano_delay/1000);
 
         sw_PWM->state = 1;
 
 		//pthread_cond_signal (& sw_PWM->cond_wait);
         GPIO_write(sw_PWM->Pin, sw_PWM->enable);
-		if (sw_PWM->up_nano_delay != 0) Delay_nano(sw_PWM->up_nano_delay);
+		if (sw_PWM->up_nano_delay != 0) Delay_Micro_accurate(sw_PWM->up_nano_delay/1000);
 	}
 	return NULL;
 }

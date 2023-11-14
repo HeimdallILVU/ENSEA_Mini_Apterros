@@ -10,8 +10,8 @@
 #include "main.h"
 #include "include/heimdall.h"
 
-#define RANGE 128
-#define SCALE 1e3
+#define RANGE 10
+#define SCALE 1e5
 
 // Test Thread Software PWM ?
 
@@ -23,7 +23,7 @@ static Sw_PWM Sw_PWM_1 = {
 	.Pin = RPI_GPIO_P1_11,
 	.enable = 1,
 	.range = RANGE,
-	.alpha = 32,
+	.alpha = 1,
 	.frequency = 1 * SCALE,
 	.mutex_state = PTHREAD_MUTEX_INITIALIZER,
 	.mutex_data = PTHREAD_MUTEX_INITIALIZER,
@@ -75,7 +75,7 @@ int main() {
 	// Ramp up and down Duty Cycle
 	while(1) {
 		// Non linear behavior for fun
-		Delay(10);
+		Delay(500);
 
 		i += dir ;
 
