@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "heimdall.h": "c",
+        "stdio.h": "c",
+        "bcm2835.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}
