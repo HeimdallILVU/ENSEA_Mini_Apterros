@@ -5,6 +5,7 @@
 #include <pthread.h>
 #include <unistd.h>
 #include <time.h>
+#include <string.h>
 
 
 
@@ -91,6 +92,28 @@ uint8_t I2C_read_from_register(i2c_entity i2c_entity, uint8_t REGISTER) {
 }
 
 /* UART commands */
+
+/*Uart Write in format bit start -> 8 data bits -> bit stop */
+void UART_Write(uint8_t pin, uint64_t freq, char * buf) {
+
+    uint64_t period = 1e9 / freq;
+    for(int i = 0; i < strlen(buf); i++) {
+        GPIO_write(pin, 0);
+        Delay_Micro_accurate(period/1000);
+        char char_i = buf[i];
+        for(int j = 0; j < 8; j++) {
+            GPIO_write(pin, (char_i & (1<<(7-j)))?1:0);
+            Delay_Micro_accurate(period/1000);
+        }
+        GPIO_write(pin, 1);
+        Delay_Micro_accurate(10 * period/1000);
+    }
+    GPIO_write(pin, 1);
+}
+
+void UART_Read(void);
+
+void UART_Init(void);
 
 /* Software PWM commands*/
 

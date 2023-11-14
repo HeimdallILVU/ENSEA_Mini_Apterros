@@ -181,7 +181,13 @@ void Sw_PWM_enable(void * psw_PWM, uint8_t enable);
 */
 void Sw_PWM_set_alpha(void * psw_PWM, uint32_t alpha);
 
+/*! UART Write
 
+    \param[in] pin number of the pin for TX
+    \param[in] freq frequency of the sending
+    \param[in] buf char buffer
+*/
+void UART_Write(uint8_t pin, uint64_t freq, char * buf); 
 
 
 /*! Initialize the pwm with the default values of the pwm_entity
