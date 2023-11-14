@@ -10,8 +10,8 @@
 #include "main.h"
 #include "include/heimdall.h"
 
-#define RANGE 16
-#define SCALE 1e5
+#define RANGE 128
+#define SCALE 1e3
 
 // Test Thread Software PWM ?
 
