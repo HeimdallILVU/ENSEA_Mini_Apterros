@@ -37,17 +37,17 @@ int main() {
     set_realtime_priority();
     set_thread_affinity();
 
-    gpioCfgClock(1, 1, 1);
-    gpioInitialise();
+    //gpioCfgClock(1, 1, 1);
+    //gpioInitialise();
 
     struct timespec start, end, end2;
 
     start = gettime_nano();
 
     //sleep_nano(1000);
-    //sleep_micros(80);
+    //sleep_micros(1);
 
-    //for(int i = 0; i<10000; i++);
+    //for(int i = 0; i<100; i++);
     //gpioDelay(1);
 
     end = gettime_nano();
