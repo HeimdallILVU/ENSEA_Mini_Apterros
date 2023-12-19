@@ -93,7 +93,7 @@ uint8_t I2C_read_from_register(i2c_entity i2c_entity, uint8_t REGISTER) {
 
 /* UART commands */
 
-/*Uart Write in format bit start -> 8 data bits -> bit stop */
+/* Uart Write in format bit start -> 8 data bits -> bit stop */
 void UART_Write(uint8_t pin, uint64_t freq, char * buf) {
 
     uint64_t period = 1e9 / freq;
