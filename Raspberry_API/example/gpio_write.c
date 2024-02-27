@@ -1,5 +1,6 @@
 /* Main function */
 #include <bcm2835.h>
+#include <stdlib.h>
 
 #include "api.h"
 

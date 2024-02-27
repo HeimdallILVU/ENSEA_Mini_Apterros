@@ -2,7 +2,9 @@
     "files.associations": {
         "bcm2835.h": "c",
         "stdlib.h": "c",
-        "time.h": "c"
+        "time.h": "c",
+        "stdio.h": "c",
+        "gpio.h": "c"
     },
     "C_Cpp.errorSquiggles": "enabled",
     
