@@ -1,6 +1,6 @@
 CC := gcc
 CFLAGS := -Wall -Werror -I./include 
-LDFLAGS := -lbcm2835 -lpthread -lm -lwiringPi -lrt
+LDFLAGS := -lbcm2835 -lpthread -lm -lrt
 
 SRC := main.c src/heimdall.c   # Add your source files here
 OBJ := $(SRC:.c=.o)

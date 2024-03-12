@@ -1,4 +1,5 @@
 /* All the API's functions */
+
 #include <stdlib.h>
 
 #include "api.h"

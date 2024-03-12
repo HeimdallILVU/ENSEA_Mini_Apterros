@@ -1,4 +1,5 @@
 /* All the timer's functions */
+
 #include <stdlib.h>
 
 #include "timer.h"

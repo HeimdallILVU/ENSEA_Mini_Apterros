@@ -1,4 +1,5 @@
 /* All the parallel's functions */
+
 #include <stdlib.h>
 
 #include "parallel.h"
