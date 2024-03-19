@@ -2,12 +2,9 @@
 
 #include <stdio.h>
 #include <bcm2835.h>
-#include <pthread.h>
 #include <unistd.h>
 #include <time.h>
 #include <string.h>
-
-
 
 #include "heimdall.h"
 

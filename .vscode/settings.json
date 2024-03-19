@@ -5,7 +5,8 @@
     "time.h": "c",
     "stdio.h": "c",
     "gpio.h": "c",
-    "*.old2": "c"
+    "*.old2": "c",
+    "stdint.h": "c"
   },
   "C_Cpp.errorSquiggles": "enabled",
   "C_Cpp_Runner.msvcBatchPath": "",
