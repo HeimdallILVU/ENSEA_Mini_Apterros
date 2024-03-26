@@ -11,3 +11,5 @@ We use BCM2835 as suggested in https://www.bigmessowires.com/2018/05/26/raspberr
 ## Drawings
 
 https://drive.google.com/file/d/1S8WVXRdebsr4sbtn4mN3WGNnPGJJXOVw/view?usp=sharing
+
+tmp https://connect.ed-diamond.com/GNU-Linux-Magazine/glmfhs-111/comparaison-de-deux-methodes-d-isolation-cpu
